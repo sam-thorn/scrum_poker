@@ -47,8 +47,10 @@ class MyStatelessWidget extends StatelessWidget {
           Center(
               child: Card(
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-              ListTile(
-                title: Text('Card 1'),
+              SizedBox(
+                width: 200,
+                height: 340,
+                child: Text('Card 1'),
               )
             ]),
           )),
