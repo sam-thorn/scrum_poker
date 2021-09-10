@@ -43,10 +43,15 @@ class MyStatelessWidget extends StatelessWidget {
     return PageView(
         scrollDirection: Axis.horizontal,
         controller: controller,
-        children: const <Widget>[
+        children: <Widget>[
           Center(
-            child: Text('Card 1'),
-          ),
+              child: Card(
+            child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+              ListTile(
+                title: Text('Card 1'),
+              )
+            ]),
+          )),
           Center(
             child: Text('Card 2'),
           ),
