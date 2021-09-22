@@ -55,8 +55,26 @@ class MyStatelessWidget extends StatelessWidget {
             ]),
           )),
           Center(
-            child: Text('Card 2'),
-          ),
+              child: Card(
+                  child:
+                      Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+            Container(
+              margin: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: const Color(0xff7c94b6),
+                border: Border.all(
+                  color: Colors.grey,
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(4),
+                //image: const DecorationImage(
+                //image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                //fit: BoxFit.cover,
+              ),
+              child: Text('Card 2'),
+            ),
+          ]))),
           Center(
             child: Text('Card 3'),
           ),
