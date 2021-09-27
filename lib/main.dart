@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,8 +43,12 @@ class MyStatelessWidget extends StatelessWidget {
     final PageController controller = PageController(initialPage: 0);
     return PageView(
         scrollDirection: Axis.horizontal,
+        // Do the swipe animations ('physics') go here?
         controller: controller,
         children: <Widget>[
+          // The first card
+          // Use this card to learn how to use an alertDialog or popup
+
           Center(
               child: Card(
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
@@ -54,29 +59,40 @@ class MyStatelessWidget extends StatelessWidget {
               )
             ]),
           )),
-          Center(
+
+          // The second card
+          // Use this card to learn how to do a card flip animation
+
+          GestureDetector(
+              onLongPress: () {
+                _showDialog(context)
+              },
               child: Card(
                   child:
                       Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-            Container(
-              margin: const EdgeInsets.all(0),
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 105, vertical: 210),
-              decoration: BoxDecoration(
-                color: const Color(0xff7c94b6),
-                border: Border.all(
-                  color: Colors.grey,
-                  width: 2,
-                ),
-                borderRadius: BorderRadius.circular(18),
+                Container(
+                  margin: const EdgeInsets.all(0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 105, vertical: 210),
+                  decoration: BoxDecoration(
+                    color: const Color(0xff7c94b6),
+                    border: Border.all(
+                      color: Colors.grey,
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.circular(18),
 
-                // image: const DecorationImage(
-                // image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                // fit: BoxFit.cover,
-              ),
-              child: Text('Card 2'),
-            ),
-          ]))),
+                    // image: const DecorationImage(
+                    // image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                    // fit: BoxFit.cover,
+                  ),
+                  child: Text('Card 2'),
+                ),
+              ]))),
+
+          // The third card
+          // Use this card to learn how to insert an image in the shape you want
+          
           Center(
             child: Text('Card 3'),
           ),
