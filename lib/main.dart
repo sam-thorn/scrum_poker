@@ -32,12 +32,45 @@ class ScrumPoker extends StatelessWidget {
         body: Container(
           // Background Image
           decoration: BoxDecoration(
-              image: DecorationImage(
-            image: AssetImage('assets/images/cardBackground.png'),
-            fit: BoxFit.cover,
-          )),
+            image: DecorationImage(
+              image: AssetImage('assets/images/cardBackground.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: new TeReoCardWidget(),
+          //crossAxisAlignment: CrossAxisAlignment.stretch,
         ),
       ),
+    );
+  }
+}
+
+class TeReoCardWidget extends StatelessWidget {
+  const TeReoCardWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final PageController controller = PageController(initialPage: 0);
+    return PageView(
+      scrollDirection: Axis.horizontal,
+      controller: controller,
+      children: <Widget>[
+        Center(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/card0.png'),
+              ),
+            ),
+          ),
+        ),
+        Center(
+          child: Text('text'),
+        ),
+        Center(
+          child: Text('text again'),
+        ),
+      ],
     );
   }
 }
