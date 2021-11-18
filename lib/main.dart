@@ -9,7 +9,7 @@ class ScrumPoker extends StatelessWidget {
   // This widget is the root of your application.
   const ScrumPoker({Key? key}) : super(key: key);
 
-  static const String _title = 'Scrum Poker';
+  //static const String _title = 'Scrum Poker';
 
   @override
   Widget build(BuildContext context) {
@@ -28,74 +28,49 @@ class ScrumPoker extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: const MyStatelessWidget(),
+        // appBar: AppBar(title: const Text(_title)),
+        body: Container(
+          // Background Image
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/cardBackground.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: new TeReoCardWidget(),
+          //crossAxisAlignment: CrossAxisAlignment.stretch,
+        ),
       ),
     );
   }
 }
 
-class MyStatelessWidget extends StatelessWidget {
-  const MyStatelessWidget({Key? key}) : super(key: key);
+class TeReoCardWidget extends StatelessWidget {
+  const TeReoCardWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final PageController controller = PageController(initialPage: 0);
     return PageView(
-        scrollDirection: Axis.horizontal,
-        // Do the swipe animations ('physics') go here?
-        controller: controller,
-        children: <Widget>[
-          // The first card
-          // Use this card to learn how to use an alertDialog or popup
-
-          Center(
-              child: Card(
-            child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-              SizedBox(
-                width: 200,
-                height: 340,
-                child: Text('Card 1'),
-              )
-            ]),
-          )),
-
-          // The second card
-          // Use this card to learn how to do a card flip animation
-
-          GestureDetector(
-              onLongPress: () {
-                _showDialog(context)
-              },
-              child: Card(
-                  child:
-                      Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.all(0),
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 105, vertical: 210),
-                  decoration: BoxDecoration(
-                    color: const Color(0xff7c94b6),
-                    border: Border.all(
-                      color: Colors.grey,
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(18),
-
-                    // image: const DecorationImage(
-                    // image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                    // fit: BoxFit.cover,
-                  ),
-                  child: Text('Card 2'),
-                ),
-              ]))),
-
-          // The third card
-          // Use this card to learn how to insert an image in the shape you want
-          
-          Center(
-            child: Text('Card 3'),
+      scrollDirection: Axis.horizontal,
+      controller: controller,
+      children: <Widget>[
+        Center(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/card0.png'),
+              ),
+            ),
           ),
-        ]);
+        ),
+        Center(
+          child: Text('text'),
+        ),
+        Center(
+          child: Text('text again'),
+        ),
+      ],
+    );
   }
 }
