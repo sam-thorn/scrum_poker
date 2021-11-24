@@ -57,6 +57,7 @@ class TeReoCardWidget extends StatelessWidget {
       children: <Widget>[
         Center(
           child: Container(
+            width: 360,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/card0.png'),
@@ -65,10 +66,24 @@ class TeReoCardWidget extends StatelessWidget {
           ),
         ),
         Center(
-          child: Text('text'),
+          child: Container(
+            width: 360,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/cardHalf.png'),
+              ),
+            ),
+          ),
         ),
         Center(
-          child: Text('text again'),
+          child: Container(
+            width: 360,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/card1.png'),
+              ),
+            ),
+          ),
         ),
       ],
     );
