@@ -85,6 +85,16 @@ class TeReoCardWidget extends StatelessWidget {
             ),
           ),
         ),
+        Center(
+          child: Container(
+            width: 360,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/card2.png'),
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
