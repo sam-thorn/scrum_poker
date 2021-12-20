@@ -56,6 +56,8 @@ flutter:
     - assets/images/card20.png
     - assets/images/card40.png
     - assets/images/card100.png
+    - assets/images/cardInfinity.png
+    - assets/images/cardUnknown.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
