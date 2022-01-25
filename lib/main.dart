@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flip_card/flip_card.dart';
 
 void main() {
   runApp(ScrumPoker());
@@ -17,14 +18,6 @@ class ScrumPoker extends StatelessWidget {
       title: 'Scrum Poker',
       theme: ThemeData(
         // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.green,
       ),
       home: Scaffold(
@@ -55,13 +48,23 @@ class TeReoCardWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       controller: controller,
       children: <Widget>[
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card0.png'),
+        FlipCard(
+          fill: Fill
+              .fillBack, // Fill the back side of the card to make in the same size as the front.
+          direction: FlipDirection.HORIZONTAL, // default
+          front: Center(
+            child: Container(
+              width: 360,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card0.png'),
+                ),
               ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              child: Text('Back'),
             ),
           ),
         ),
