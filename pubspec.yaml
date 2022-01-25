@@ -47,7 +47,7 @@ flutter:
   assets:
     - assets/images/cardBackground.png
     - assets/images/card0.png
-    - assets/images/card0-hardMode.png
+    - assets/images/card0HardMode.png
     - assets/images/cardHalf.png
     - assets/images/card1.png
     - assets/images/card2.png
