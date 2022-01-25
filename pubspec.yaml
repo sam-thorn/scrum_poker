@@ -27,6 +27,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flip_card: ^0.6.0
 
 dev_dependencies:
   flutter_test:
@@ -46,6 +47,7 @@ flutter:
   assets:
     - assets/images/cardBackground.png
     - assets/images/card0.png
+    - assets/images/card0-hardMode.png
     - assets/images/cardHalf.png
     - assets/images/card1.png
     - assets/images/card2.png
