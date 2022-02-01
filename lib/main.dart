@@ -53,7 +53,7 @@ class TeReoCardWidget extends StatelessWidget {
     final PageController controller = PageController(initialPage: 0);
     return Column(
       children: <Widget>[
-        Expanded(
+        Flexible(
           flex: 1,
           child: PageView(
             scrollDirection: Axis.horizontal,
@@ -192,9 +192,23 @@ class TeReoCardWidget extends StatelessWidget {
             ],
           ),
         ),
-        // TODO: Fix stacking of columns to display text below cards
-        // Column mainAxisSize / SizedBox
-        Expanded(child: Text("Test"), flex: 0),
+        // Column(
+        //   crossAxisAlignment: CrossAxisAlignment.center,
+        //   mainAxisSize: MainAxisSize.min,
+        //   children: [
+        //     Flexible(
+        //         //flex: 6,
+        //         child: Container(
+        //             color: Colors.red,
+        //             child: SizedBox(
+        //                 width: double.infinity,
+        //                 height: 80,
+        //                 child: Text(
+        //                   'Test',
+        //                   textAlign: TextAlign.center,
+        //                 )))),
+        //   ],
+        // ),
       ],
     );
   }
