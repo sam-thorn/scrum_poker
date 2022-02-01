@@ -67,28 +67,56 @@ class TeReoCardWidget extends StatelessWidget {
               width: 360,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/card0HardMode.png'),
+                  image: AssetImage('assets/images/card0_B.png'),
                 ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/cardHalf.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 360,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardHalf.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 360,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardHalf_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card1.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 360,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card1.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 360,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card1_B.png'),
+                ),
               ),
             ),
           ),
