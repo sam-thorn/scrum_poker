@@ -1,24 +1,17 @@
 # scrum_poker
 
-A new Flutter project.
+Place your votes in your team's Scrum Poker Planning session and learn Te Reo Maori at the same time 😀 🇳🇿
 
-## Getting Started
+Scroll left or right to choose a number to vote with
 
-This project is a starting point for a Flutter application.
+Tap to flip the card for Hard Mode
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+--
 
 ## Running the App
 
-- Open the Simulator app.
-- `flutter run`
+- Open the Simulator app. This is packaged as part of the Xcode app
+- In a terminal window, enter: `flutter run`
 
 --
 
