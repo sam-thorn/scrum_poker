@@ -6,6 +6,9 @@ Scroll left or right to choose a number to vote with
 
 Tap to flip the card for Hard Mode 💪
 
+![scrum-poker-cards-reverse](https://user-images.githubusercontent.com/75647870/220291983-d7fb162e-49c5-48c3-81ae-cda2a5ee17fb.png)
+
+
 --
 
 ## Running the App
