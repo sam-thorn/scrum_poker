@@ -10,8 +10,6 @@ class ScrumPoker extends StatelessWidget {
   // This widget is the root of your application.
   const ScrumPoker({Key? key}) : super(key: key);
 
-  //static const String _title = 'Scrum Poker';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,18 +41,22 @@ class TeReoCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final PageController controller = PageController(initialPage: 0);
+    final PageController controller =
+        PageController(initialPage: 0, viewportFraction: 0.8);
     return PageView(
       scrollDirection: Axis.horizontal,
       controller: controller,
       children: <Widget>[
+        // Padding(
+        //   padding: const EdgeInsets.all(8.0),
+        // ),
         FlipCard(
           fill: Fill
               .fillBack, // Fill the back side of the card to make in the same size as the front.
           direction: FlipDirection.HORIZONTAL, // default
           front: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/card0.png'),
@@ -64,7 +66,7 @@ class TeReoCardWidget extends StatelessWidget {
           ),
           back: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/card0_B.png'),
@@ -78,7 +80,7 @@ class TeReoCardWidget extends StatelessWidget {
           direction: FlipDirection.HORIZONTAL,
           front: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/cardHalf.png'),
@@ -88,7 +90,7 @@ class TeReoCardWidget extends StatelessWidget {
           ),
           back: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/cardHalf_B.png'),
@@ -102,7 +104,7 @@ class TeReoCardWidget extends StatelessWidget {
           direction: FlipDirection.HORIZONTAL,
           front: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/card1.png'),
@@ -112,7 +114,7 @@ class TeReoCardWidget extends StatelessWidget {
           ),
           back: Center(
             child: Container(
-              width: 360,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/card1_B.png'),
@@ -121,102 +123,242 @@ class TeReoCardWidget extends StatelessWidget {
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card2.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card2.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card2_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card3.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card3.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card3_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card5.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card5.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card5_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card8.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card8.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card8_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card13.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card13.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card13_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card20.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card20.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card20_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card40.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card40.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card40_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/card100.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card100.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/card100_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/cardInfinity.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardInfinity.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardInfinity_B.png'),
+                ),
               ),
             ),
           ),
         ),
-        Center(
-          child: Container(
-            width: 360,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/cardUnknown.png'),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardUnknown.png'),
+                ),
+              ),
+            ),
+          ),
+          back: Center(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/cardUnknown_B.png'),
+                ),
               ),
             ),
           ),
