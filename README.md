@@ -4,7 +4,7 @@ Place your votes in your team's Scrum Poker Planning session and learn Te Reo Ma
 
 Scroll left or right to choose a number to vote with
 
-Tap to flip the card for Hard Mode
+Tap to flip the card for Hard Mode 💪
 
 --
 
