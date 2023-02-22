@@ -360,9 +360,12 @@ class TeReoCardWidget extends StatelessWidget {
                   image: AssetImage('assets/images/cardUnknown_B.png'),
                 ),
               ),
-            ),
+            ],
           ),
         ),
+        // TODO: Fix stacking of columns to display text below cards
+        // Column mainAxisSize / SizedBox
+        Expanded(child: Text("Test"), flex: 0),
       ],
     );
   }
