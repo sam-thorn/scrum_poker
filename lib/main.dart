@@ -19,7 +19,6 @@ class ScrumPoker extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: Scaffold(
-        // appBar: AppBar(title: const Text(_title)),
         body: Container(
           // Background Image
           decoration: BoxDecoration(
@@ -29,7 +28,6 @@ class ScrumPoker extends StatelessWidget {
             ),
           ),
           child: new TeReoCardWidget(),
-          //crossAxisAlignment: CrossAxisAlignment.stretch,
         ),
       ),
     );
@@ -47,280 +45,6 @@ class TeReoCardWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       controller: controller,
       children: <Widget>[
-<<<<<<< HEAD
-        Flexible(
-          flex: 1,
-          child: PageView(
-            scrollDirection: Axis.horizontal,
-            controller: controller,
-            children: <Widget>[
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card0.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardHalf.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card1.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card2.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card3.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card5.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card8.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card13.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card20.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card40.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card100.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardInfinity.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardUnknown.png'),
-                    ),
-                  ),
-||||||| 1cd65e0
-        Expanded(
-          flex: 1,
-          child: PageView(
-            scrollDirection: Axis.horizontal,
-            controller: controller,
-            children: <Widget>[
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card0.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardHalf.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card1.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card2.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card3.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card5.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card8.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card13.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card20.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card40.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/card100.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardInfinity.png'),
-                    ),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  width: 360,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/cardUnknown.png'),
-                    ),
-                  ),
-=======
-        // Padding(
-        //   padding: const EdgeInsets.all(8.0),
-        // ),
         FlipCard(
           fill: Fill
               .fillBack, // Fill the back side of the card to make in the same size as the front.
@@ -629,29 +353,11 @@ class TeReoCardWidget extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/cardUnknown_B.png'),
->>>>>>> 5b943a400b18f135e74b5686092839d1135b1430
                 ),
               ),
-            ],
+            ),
           ),
         ),
-        // Column(
-        //   crossAxisAlignment: CrossAxisAlignment.center,
-        //   mainAxisSize: MainAxisSize.min,
-        //   children: [
-        //     Flexible(
-        //         //flex: 6,
-        //         child: Container(
-        //             color: Colors.red,
-        //             child: SizedBox(
-        //                 width: double.infinity,
-        //                 height: 80,
-        //                 child: Text(
-        //                   'Test',
-        //                   textAlign: TextAlign.center,
-        //                 )))),
-        //   ],
-        // ),
       ],
     );
   }
